@@ -30,8 +30,6 @@ h3 {
 }
 
 
-
-
 .nav-icon {
     display: none;
     margin: auto 0;
@@ -77,6 +75,7 @@ h3 {
   }
 
 #nav-check {
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
     display:none;
 }
 
