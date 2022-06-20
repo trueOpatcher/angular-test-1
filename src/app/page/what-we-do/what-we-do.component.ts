@@ -20,7 +20,7 @@ export class WhatWeDoComponent {
 
   phone = [
     style({opacity: 0, transform: 'translateY(200px)'}),
-    animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', 
+    animate('700ms cubic-bezier(0.35, 0, 0.25, 1)', 
     style({opacity: 1, transform: 'translateY(0)'})),
   ];
 
