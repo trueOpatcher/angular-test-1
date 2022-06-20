@@ -14,10 +14,10 @@ app.use('*', function(req, res, next) {
 })
 
 
-app.use(express.static(path.join(__dirname + '/dist/angular-test')));
+app.use(express.static(path.join(__dirname + '/dist/angular-test0')));
 app.get('*', (req, res) => {
 
-    res.sendFile(path.join(__dirname + '/dist/angular-test/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/angular-test0/index.html'));
 
 });
 
