@@ -1,0 +1,89 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+%input {
+    line-height: 21px;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+@include device('<large-screen') { 
+    input, textarea {
+        width: 100% !important;
+    }
+}
+
+
+input.ng-invalid.ng-touched {
+    border-bottom: 1px solid red;
+}
+
+textarea.ng-invalid.ng-touched {
+    border-bottom: 1px solid red;
+}
+
+input.ng-invalid.ng-touched ~ span {
+    color: red;
+}
+
+textarea.ng-invalid.ng-touched ~ span {
+    color: red;
+}
+
+
+
+.contact {
+    margin-left: 5%;
+    margin-right: 5%;
+    transform: translateY(100px);
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column-reverse;
+
+    input {
+       @extend %input;
+       
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    span {
+        padding-bottom: 5px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    textarea {
+        @extend %input;
+    }
+
+    textarea:focus {
+        outline: none;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button {
+    background-color: $yellow;
+}
+
+.error {
+    bottom: 24px;
+    position: absolute;
+    font-size: 12px;
+    line-height: 21px;
+    color: red;
+}

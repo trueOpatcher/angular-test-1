@@ -1,0 +1,51 @@
+
+@import '_variables';
+
+%media-container {
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 480px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+}
+
+.container {
+    @extend %media-container;
+}
+
+
+
+%button {
+    white-space: nowrap;
+    padding: 20px 40px;
+    background-color: $white;
+    color: $black;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+%button:hover {
+    box-shadow: 0px 0px 3px rgb(19, 18, 18);
+
+}
+
+.button {
+    @extend %button;
+}
+

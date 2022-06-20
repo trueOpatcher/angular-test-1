@@ -1,0 +1,25 @@
+
+
+.header {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $yellow;
+
+    & .container {
+        @extend %media-container;
+        
+        height: $nav-height;
+        flex-wrap: nowrap;
+
+        & ul {
+        
+            & .item ~ .active {
+                @extend %button;
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+@import '../../../scss/mixins';
+
+
+@include device('<large-screen') {
+    
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .item-1 {
+        width: 100%;
+    }
+
+    .item-2 {
+        padding-right: 10%;
+    }
+
+}
+
+
+
+.credits {
+    background-color: #262626;
+    padding-top: 230px;
+}
+
+ul {
+    li {
+        white-space:unset;
+    }
+}
+
+

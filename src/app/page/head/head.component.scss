@@ -1,0 +1,33 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+
+@include device('<large-screen') {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        align-self: flex-start;
+    }
+}
+
+@include device('<mobile') {
+    .item {
+        width:auto !important;
+        max-width: 360px;
+    }
+}
+
+.item {
+    text-align: center;
+    width: 360px;;
+}
+
+.container {
+    
+    span {
+        color: $yellow;
+    }   
+    
+}

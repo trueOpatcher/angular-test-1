@@ -1,0 +1,9 @@
+
+@import '../../../scss/mixins';
+
+
+@include device('<large-screen') {
+    .items {
+        flex-direction: column;
+    }
+}

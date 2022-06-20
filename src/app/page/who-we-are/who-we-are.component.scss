@@ -1,0 +1,44 @@
+
+@import '../../../scss/mixins';
+@import '../../../scss/variables';
+
+
+@include device('<large-screen') {
+    .image {
+        display: none;
+    }
+
+    .container .shadow {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.shadow-1 {
+    vertical-align: middle;
+    width: 500px; 
+    border-radius: 20px; 
+    padding: 15px; 
+}
+
+.shadow {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    height: 100%;
+    background: #F3F3F3;
+    width: 630px;
+}
+
+.image {
+    margin: auto 0;
+    height: 100%;
+    position: relative;
+}

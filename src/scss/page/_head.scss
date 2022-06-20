@@ -1,0 +1,16 @@
+
+
+.head {
+    padding-top: $nav-height;
+    background-color: $yellow;
+    
+
+    .container {
+        @extend %media-container;
+        margin-right: 0;
+        
+    }
+
+    padding-bottom: 45px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,86 @@
+
+
+
+.card {
+    width: 280px;
+    height: 475px;
+}
+
+.container {
+    overflow-x: auto;
+}
+
+
+
+.container::-webkit-scrollbar {
+    background-color: transparent;
+    height: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    
+    background: #D3DFFE;
+    
+    border-radius: 8px;
+}
+
+
+#message1 {
+    
+    top: 230px;
+    left: -84px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#message2 {
+    top: 240px;
+    left: 55px;
+    border-radius: 10px;
+   
+}
+
+
+.message {
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+
+    
+    position: relative;
+    width: 140px;
+    height: 75px;
+
+    .icon {
+        margin: 0;
+        position: absolute;
+        top: 10px;
+        left: 17px;
+    }
+
+    .text {
+        left: 17px;
+        bottom: 13px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 11px;
+        
+        color: #111111;
+        position: absolute;
+    }
+
+    .time {
+        right: 15px;
+        top: 15px;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 9px;
+        
+        color: #000000;
+        
+        opacity: 0.5;
+        position: absolute;
+    }
+}
+
+
+

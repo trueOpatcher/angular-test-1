@@ -1,0 +1,67 @@
+<div class="container flex-col">
+
+    <h2><span class="yellow">CONTACT</span> US</h2>
+
+    <div animateIn [animateInAnimation]="animateForm" class="contact max-w-1100 box-shadow border-30 bg-white">
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="p-40 grey">
+
+            <div class="form-input pb-50 relative">
+
+                <input type="text" formControlName="name">
+
+                <span>Full Name</span>             
+
+                <span class="error" *ngIf="name?.errors?.['required'] && (name?.touched || name?.dirty)">Name is required</span>
+
+            </div>
+
+            <div class="form-input pb-50 relative">
+
+                <input type="text" formControlName="companyName">
+                
+                <span>Company Name</span>
+
+                <span class="error" *ngIf="companyName?.errors && (companyName?.touched || companyName?.dirty)">Company Name is required</span>
+
+            </div>
+
+            <div class="form-input pb-50 relative">
+                
+                <input type="number" formControlName="number">
+
+                <span>Phone Number</span>
+
+                <span class="error" *ngIf="number?.errors && (number?.touched || number?.dirty)">Phone Number is required</span>
+
+            </div>
+
+            <div class="form-input pb-50 relative">
+                
+                <input type="text" formControlName="email">
+
+                <span>E-mail</span>
+
+                <span class="error" *ngIf="email?.errors?.['required'] && (email?.touched || email?.dirty)">Email is required</span>
+
+            </div>
+
+            <div class="mt-20 form-input pb-50 relative">
+
+                <textarea
+                cols="30" 
+                rows="10"
+                formControlName="desc"></textarea>
+                
+                <span>Write us messages</span>
+               
+                <span class="error" *ngIf="desc?.errors?.['required'] && (desc?.touched || desc?.dirty)">Description is required</span> 
+                
+            </div>
+
+            <button type="submit" class="button" [disabled]="!contactForm.valid">Send Message</button>
+
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,53 @@
+
+
+$yellow: #ffbc00;
+$white: #fff;
+$black: #000;
+$grey: #999;
+
+$grey-l: #FBFBFB;
+$grey-l0: #f3f3f3;
+$grey-l1: #7d7d7d;
+
+$blue-l: #D3DFFE;
+
+
+$nav-height: 80px;
+
+
+.bg-blue-l {
+    background-color: $blue-l !important;
+}
+
+.bg-grey-l {
+    background-color: $grey-l !important;
+}
+
+.bg-grey-l0 {
+    background-color: $grey-l0 !important;
+}
+
+.bg-yellow {
+    background-color: $yellow !important;
+}
+
+.bg-white {
+    background-color: $white !important;
+}
+
+.yellow {
+    color: $yellow !important;
+}
+
+.white {
+    color: $white !important;
+}
+
+.grey {
+    color: $grey !important;
+}
+
+.grey-l1 {
+    color: $grey-l1;
+}
+
