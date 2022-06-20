@@ -15,7 +15,7 @@ export class SideMenuComponent {
 
   onMenuToggle() {
     this.toggle = !this.toggle;
-
+  console.log(this.toggle)
     this.menuState();
   }
 

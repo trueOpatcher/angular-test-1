@@ -17,6 +17,13 @@
     }
 }
 
+@include device('<mobile') { 
+    button {
+        display: block;
+        margin: auto;
+    }
+}
+
 
 input.ng-invalid.ng-touched {
     border-bottom: 1px solid red;
