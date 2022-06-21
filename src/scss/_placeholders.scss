@@ -49,3 +49,8 @@
     @extend %button;
 }
 
+.active {
+    @extend %button;
+    padding: 15px 14px;  
+}
+

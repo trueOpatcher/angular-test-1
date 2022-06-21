@@ -1,5 +1,5 @@
 import { animate, style } from '@angular/animations';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from './contact.service';
 

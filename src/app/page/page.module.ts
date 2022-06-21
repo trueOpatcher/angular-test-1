@@ -9,7 +9,6 @@ import { WhoWeAreComponent } from "./who-we-are/who-we-are.component";
 import { WhyWeComponent } from './why-we/why-we.component';
 import { WhatWeDo2Component } from './what-we-do2/what-we-do2.component';
 import { ContactUsModule } from "./contact-us/contact.module";
-import { CreditsComponent } from './credits/credits.component';
 import { CreditsModule } from "./credits/credits.module";
 import { AnimateInModule } from "ngx-animate-in";
 

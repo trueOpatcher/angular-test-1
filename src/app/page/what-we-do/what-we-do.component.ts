@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './what-we-do.component.html',
   styleUrls: ['./what-we-do.component.scss'],
 })
+
 export class WhatWeDoComponent {
 
   animateTop = [
