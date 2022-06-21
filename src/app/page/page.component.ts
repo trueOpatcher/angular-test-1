@@ -1,6 +1,4 @@
-
-import { animate, style } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-page',
@@ -9,5 +7,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent {
  
-  
+
 }

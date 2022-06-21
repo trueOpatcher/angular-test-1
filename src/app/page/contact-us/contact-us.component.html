@@ -12,7 +12,7 @@
 
                 <span>Full Name</span>             
 
-                <span class="error" *ngIf="name?.errors?.['required'] && (name?.touched || name?.dirty)">Name is required</span>
+                <span class="error" *ngIf="name?.errors && (name?.touched || name?.dirty)">Name is required</span>
 
             </div>
 
@@ -42,7 +42,7 @@
 
                 <span>E-mail</span>
 
-                <span class="error" *ngIf="email?.errors?.['required'] && (email?.touched || email?.dirty)">Email is required</span>
+                <span class="error" *ngIf="email?.errors && (email?.touched || email?.dirty)">Email is required</span>
 
             </div>
 
@@ -55,7 +55,7 @@
                 
                 <span>Write us messages</span>
                
-                <span class="error" *ngIf="desc?.errors?.['required'] && (desc?.touched || desc?.dirty)">Description is required</span> 
+                <span class="error" *ngIf="desc?.errors && (desc?.touched || desc?.dirty)">Description is required</span> 
                 
             </div>
 
