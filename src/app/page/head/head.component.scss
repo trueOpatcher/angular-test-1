@@ -4,11 +4,7 @@
 
 @include device('<large-screen') {
     .container {
-        flex-direction: column;
-    }
-
-    .item {
-        align-self: flex-start;
+        display: block;
     }
 }
 
